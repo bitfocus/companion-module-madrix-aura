@@ -57,7 +57,12 @@ class ModuleInstance extends InstanceBase {
     this.log('debug', `Sending command: ${url}`)
 
     try {
-      const response = await fetch(url)
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'User-Agent': 'Companion-Module/1.0',
+        },
+      })
 
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} ${response.statusText}`)

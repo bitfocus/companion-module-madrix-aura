@@ -1,0 +1,35 @@
+{
+  "name": "companion-module-madrix-aura",
+  "version": "1.0.1",
+  "description": "Control MADRIX Aura 2/8/12/32 devices via HTTP",
+  "main": "src/main.js",
+  "scripts": {
+    "format": "prettier -w .",
+    "package": "companion-module-build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verledung/companion-module-madrix-aura.git"
+  },
+  "engines": {
+    "node": "^22.20",
+    "yarn": "^4"
+  },
+  "keywords": [
+    "madrix",
+    "aura",
+    "lighting",
+    "http"
+  ],
+  "author": "verLEDung - LED- & Veranstaltungstechnik",
+  "dependencies": {
+    "@companion-module/base": "~1.14.1"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "^2.5.0",
+    "prettier": "^3.7.4"
+  },
+  "prettier": "@companion-module/tools/.prettierrc.json",
+  "packageManager": "yarn@4.12.0"
+}
